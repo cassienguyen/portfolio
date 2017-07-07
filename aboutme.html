@@ -9,7 +9,6 @@ pre {
   font-size: 36px;
   text-align: center;
 }
-
 body {
 	background-color:lavender;
     text-align: center;
@@ -20,16 +19,13 @@ p {
     color:#4F445A;
     font-size: 22px;
 }
-
 p1 {
 	color:#6E29AD;
     text-align: center;
 }
-
 p2 {
 	color:#4F445A;
 }
-
 p3 {
 	color: grey;
     text-align: left;
@@ -39,7 +35,7 @@ p3 {
 </head>
 <body>
 
-<pre><ins>C a s s i e    N g u y e n's    P o r t f o l i o</ins></pre>
+<pre>C a s s i e    N g u y e n's    P o r t f o l i o</pre>
 
 <p>Welcome to my portfolio!</p>
 
@@ -47,8 +43,20 @@ p3 {
 
 <br>
 <br>
+<p1 id="demo">ABOUT ME</p1>
 
-  <p1><b><ins>ABOUT ME</ins></b></p1>
+<script>
+document.getElementById("demo").onmouseover = function() {mouseOver()};
+document.getElementById("demo").onmouseout = function() {mouseOut()};
+
+function mouseOver() {
+    document.getElementById("demo").style.color = "white";
+}
+
+function mouseOut() {
+    document.getElementById("demo").style.color = "purple";
+}
+</script>
   <br>
   <br>
   <p2>Biography here</p2>
